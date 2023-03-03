@@ -35,12 +35,12 @@ public class CalcServiceIMPL implements CalcService {
 		return new Calculator(x,y,x*y);
 	}
 
-	@Override
-	@Cacheable(cacheNames="Calculator", key="#x")
-	public Calculator divide(double x, double y) {
-		// TODO Auto-generated method stub
-		logger.info("data fatching from method");
-		return new Calculator(x,y,x/y);
+//	@Override
+//	@Cacheable(cacheNames="Calculator", key="#x")
+//	public Calculator divide(double x, double y) {
+//		// TODO Auto-generated method stub
+//		logger.info("data fatching from method");
+//		return new Calculator(x,y,x/y);
 	}
 	}
 
